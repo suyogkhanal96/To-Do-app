@@ -33,7 +33,7 @@ button:hover{
     cursor: pointer;
 
 }
-.card input{
+input{
     width: 100%;
     padding: 5px;
     margin-top: 5px;
@@ -41,11 +41,11 @@ button:hover{
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-.card input:focus{
+input:focus{
     outline: none;
     border: 1px solid #333;
 }
-.card button{
+button{
     
     padding: 5px;
     margin-top: 5px;
@@ -55,8 +55,12 @@ button:hover{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
-.card :hover{
+button:hover{
     background-color: #f1f1f1;
     color: #333;
     cursor: pointer;
+}
+ul li{
+    list-style: none;
+    margin-left: 5px;
 }

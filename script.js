@@ -1,6 +1,27 @@
-const inputBtn = document.querySelector('.input-btn')
-const addBtn = document.querySelector('.add-btn')
-const deleteBtn = document.querySelector('.delete-btn')
+const inputBox = document.getElementById('input-box')
+const addBtn = document.getElementById('add-btn')
+const deleteBtn = document.getElementById('delete-btn')
 
+let myTask = []
 
+addBtn.addEventListener('click', ()=> {
+    const taskvalue = inputBox.value.trim()
+    if(taskvalue!=""){
+        myTask.push(taskvalue)
+        console.log(myTask)
+        renderTask()
+    }else{
+        alert("Please Enter a Task")
+    }
+   
+}   
+)
+function renderTask(){
+    let taskList = ""
+    for(let i=0; i<myTask.length;i++){
+        taskList += `<li>${i+1}${"."}${myTask[i]}</li>`
+    }
+    list.innerHTML = taskList
+    console.log(myTask)
+}
 
