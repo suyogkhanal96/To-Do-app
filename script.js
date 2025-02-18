@@ -13,7 +13,7 @@ addBtn.addEventListener('click', ()=> {
     }else{
         alert("Please Enter a Task")
     }
-   
+   inputBox.value=""
 }   
 )
 function renderTask(){
@@ -24,4 +24,6 @@ function renderTask(){
     list.innerHTML = taskList
     console.log(myTask)
 }
-
+deleteBtn.addEventListener('click', ()=>{
+    localStorage.clear()
+})
