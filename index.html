@@ -9,11 +9,17 @@
   <body>
     <div class="card">
       <div class="header"><h1>To-Do List</h1></div>
-      <div><input type="text" id="input-box" placeholder="Enter Task Here" /></div>
+      <div>
+        <input type="text" id="input-box" placeholder="Enter Task Here" />
+      </div>
       <button id="add-btn">Add Task</button>
       <button id="delete-btn">Delete All</button>
-      <button id="done-btn"></button>
-      <ul id="list"></ul>
+      <ul id="list">
+        <li>
+          <i class="fas fa-check-circle" id="done-btn"></i>
+          <i class="fas fa-trash" id="remove-btn"></i>
+        </li>
+      </ul>
     </div>
     <script src="script.js"></script>
   </body>
