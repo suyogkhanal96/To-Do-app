@@ -65,3 +65,17 @@ ul li{
     list-style: none;
     margin-left: 5px;
 }
+.done-btn{
+    background-color: #4caf50;
+    color: white;
+    margin-left: auto;
+}
+.delete-btn {
+    background-color: #e74c3c;
+
+    color: white;
+}
+.done{
+    text-decoration: line-through;
+    color: gray;
+}
